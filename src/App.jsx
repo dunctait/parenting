@@ -9,12 +9,12 @@ import NotFound from "./pages/NotFound.jsx";
 function App() {
     const router = createBrowserRouter([
         {
-            path: "/",
+            path: "/parenting",
             element: <Root />,
             errorElement: <NotFound />,
             children: [
                 {
-                    path: "/",
+                    path: "",
                     element: <div>Home!</div>,
                 },
                 {
