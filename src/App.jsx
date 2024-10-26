@@ -5,25 +5,20 @@ import {
 } from "react-router-dom";
 import Root from "./pages/Root.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import ROUTES from "./routes.jsx";
 
 function App() {
     const router = createBrowserRouter([
         {
-            path: "/parenting",
+            // The path should be "/" since basename is handled separately
+            path: "/",
             element: <Root />,
             errorElement: <NotFound />,
-            children: [
-                {
-                    path: "",
-                    element: <div>Home!</div>,
-                },
-                {
-                    path: "concepts",
-                    element: <div>Concepts!</div>,
-                }
-            ]
+            children: ROUTES
         }
-    ]);
+    ], {
+        basename: '/parenting'
+    })
 
     return <RouterProvider router={router} />;
 }

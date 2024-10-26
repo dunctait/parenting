@@ -5,7 +5,7 @@ import React from "react";
 const Layout = ({ children }) => <ChakraProvider>
     <NavSidebar />
     <Box
-        ml={{ base: 0, lg: '250px' }} // Margin for desktop sidebar
+        ml={{ base: '55px', lg: '250px' }} // margins for sidebar
         p={4}
         transition="margin 0.3s"
     >

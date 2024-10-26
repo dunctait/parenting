@@ -1,0 +1,57 @@
+.markdown-content h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+/* Remove top margin if it's a direct child of the content div */
+.markdown-content > h1:first-child {
+    margin-top: 0;
+}
+
+.markdown-content h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.83em 0;
+}
+
+.markdown-content h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: 0.67em 0;
+}
+
+.markdown-content h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.markdown-content h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+    margin: 0.33em 0;
+}
+
+.markdown-content h6 {
+    font-size: 0.67em;
+    font-weight: bold;
+    margin: 0.25em 0;
+}
+
+.markdown-content p {
+    margin: 1em 0;
+}
+
+.markdown-content ul, .markdown-content ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+.markdown-content ul {
+    list-style-type: disc;
+}
+
+.markdown-content ol {
+    list-style-type: decimal;
+}
